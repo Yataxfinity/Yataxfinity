@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>yataxfinity</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="Images/yataxfinity.png" rel="icon">
+  <link href="Images/yataxfinity.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.scss">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-transparent" style="background-color: black;">
+      <div class="container d-flex align-items-center justify-content-between position-relative">
+
+        <div class="logo">
+          <h1 class="text-light"><a href="index.html"><img src="Images/Screenshot_2024-07-07_100210-removebg-preview.png" alt=""></a></h1>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero" style="color: white;">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about" style="color: white;">About Us</a></li>
+            <li><a class="nav-link scrollto" href="#services" style="color: white;">Services</a></li>
+            <li><a class="nav-link scrollto" href="#achievements" style="color: white;">Achievements</a></li>
+            <li><a class="nav-link scrollto" href="#testimonial" style="color: white;">Testimonials</a></li>
+            <li><a class="nav-link scrollto" href="#contact" style="color: white;">Contact</a></li>
+            
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle" style="color: white;"></i>
+        </nav>
+
+      </div>
+    </header>
+    
+    <section id="hero">
+      <style>
+        .mySlides {display: none;}
+        .slideshow-container img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+          align-self: center;
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 4s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+        .slideshow-container img{
+            height: 500px;
+            width: 1000px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <center><h2>Automatic Slideshow</h2></center>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Images/Slider_Img1.jpeg">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Images/Slider-img2.jpeg">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Images/slider-img-3.jpeg">
+        </div>
+        </div>
+        
+        <div style="text-align:center">
+          <span class="dot" style="visibility: hidden;"></span> 
+          <span class="dot" style="visibility: hidden;"></span> 
+          <span class="dot" style="visibility: hidden;"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    </section>
+
+
+    <main id="main">
+
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about" style="background-color: white;">
+        <div class="container">
+          <center><h1 style="font-size: 50px;">About Us</h1></center>
+          <br><br>
+          <div class="row no-gutters">
+            <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
+              <div class="content">
+                <!-- <h3 style="font-size: 300%;">About Us</h3> -->
+                <img src="Images/yataxfinity.png" alt="">
+              </div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-stretch">
+              <div class="icon-boxes d-flex flex-column justify-content-center">
+                <div class="row">
+                  <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <i class="bx bx-receipt"></i>
+                    <h4 style="color:black;">Who Are We</h4>
+                    <p style="color: black;">We are professionally managed investment and tax consultants in Surat. We provide end-to-end services in Financial Planning, Insurance Planning & Investments, Accounts, Audits, GST filing, etc.
+                    </p>
+                  </div>
+                  <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4 style="color: black;">About CEO</h4>
+                    <p style="color: black;">Ms. Hetal Shah, with over 20 years of experience as an MDRT (USA) Insurance Advisor, Financial Planner, and GST Expert, has assisted countless clients with insurance, tax planning, and GST filings. Her background in Commerce, along with advanced certifications in insurance, marketing, and GST, underscores her commitment to continuous professional development.                  </p>
+                  </div>
+                  <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bx bx-images"></i>
+                    <h4 style="color: black;">About yataxfinity</h4>
+                    <p style="color: black;">yataxfinity, located in Surat, Gujarat, is a top-tier Financial Planning & Tax Consulting Company. With leaders boasting 20+ years of industry experience, we empower clients to safeguard investments through strategic consulting. </p>
+                  </div>
+                  <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bx bx-shield"></i>
+                    <h4 style="color: black;">Vision/Mision</h4>
+                    <p style="color: black;">yataxfinity aims to align finance and tax advisory services with client goals, striving to be the industry's most trusted consultants. With a focus on customer needs, we prioritize ethical practices and regulatory compliance for client success.</p>
+                    <!-- <img src="https://media.tenor.com/ePI2Wk6O5PUAAAAj/perfecthit.gif" alt=""> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <br><br>
+
+        <section id="counts" class="counts  section-bg" style="background-color: #31363F;">
+          <div class="container">
+    
+            <div class="row no-gutters">
+    
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-emoji-smile"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter" style="color: white;"></span>
+                  <p style="color: white;"><strong>ACHIEVEMENTS IN INSURANCE</strong></p>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-journal-richtext"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="110" data-purecounter-duration="1" class="purecounter" style="color: white;"></span>
+                  <p style="color: white;"><strong>SATISFIED CLIENTS IN TAXATION</strong></p>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-headset"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter" style="color: white;"></span>
+                  <p style="color: white;"><strong>YEARS EXPERIENCE IN INSURANCE</strong></p>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-people"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter" style="color: white;"></span>
+                  <p style="color: white;"><strong>MDRT(USA) WINNER</strong></p>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+        </section>
+
+      </div>
+    </section>
+
+
+
+<style>
+  .wrapper{
+    width: 1170px;
+    margin: 5%;
+  }
+  .wrapper h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;font-size: 60px;
+    color: #fff;
+    
+  }
+</style>
+
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins'  sans-serif;
+  }
+  .serivce-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 0;
+    position: sticky;
+  }
+
+  .service{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .service .box{
+    position: relative;
+    width: 320px;
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.1);
+  }
+  .s-box{
+    background-color: #D6E6F2;
+    color: #fff;
+  }
+  .s-heading{
+    font-weight: 900;
+  }
+</style>
+
+
+<section class="services" id="services" style="background-color: black;">
+	<div class="s-heading"> 
+	<h1 style="color: white; font-size:50px;">Services</h1>
+	</div>
+	<div class="s-box-container">
+    
+	<div class="s-box" style="background: url(https://img.freepik.com/free-vector/finance-financial-performance-concept-illustration_53876-59104.jpg); background-repeat: no-repeat;
+  background-size: cover;">
+	<div class="bar"></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<a class="s-btn" href="finance.html" style="color: white;">More</a>
+	</div>
+
+	<div class="s-box" style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL3ERVLi5fHWZKDYMLcn_iNKBpLcPMXROV4RioGsKvKKtoUAdep24Hvhv3o6U3w25lLdg&usqp=CAU); background-repeat: no-repeat;
+  background-size: cover;">
+	<div class="bar"></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a class="s-btn" href="insurance.html" style="color: white;">More</a>
+	</div>
+
+	<div class="s-box" style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqznZ6I88_wK89jKLucTz7vJO8oqHw4v7bkVKZ7UbCdq4ok3FpJ6ugVHYBnT0ZV1ObVI&usqp=CAU);   background-repeat: no-repeat;
+  background-size: cover;">
+	<div class="bar"></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a class="s-btn" href="taxation.html" style="color: white;">More</a>
+	</div>
+	</div>
+
+	</section>
+
+
+
+  <style>
+a{
+	text-decoration:none;
+}
+.services{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+  background: #91C8E4;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+}
+.s-heading{
+	text-align:center;
+}
+.s-heading h1{
+	color:#576975;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0px;
+}
+.s-heading p{
+	color: #fff;
+	font-size: 1rem;
+	margin: 5px;
+	text-align: center;
+}
+.s-box-container{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s-box{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:300px;
+	padding: 20px 25px;
+	height: 400px;
+	box-sizing: border-box;
+	margin: 30px;
+	position: relative;
+  border: 3px solid white;
+
+}
+.s-box img{
+	height: 200px;
+}
+.s-box h1{
+	color:#576975;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+	
+}
+.s-box p{
+	color: rgba(87,105,117,0.90);
+	text-align: center;
+}
+.s-btn{
+	width: 140px;
+	height: 40px;
+	border:1px solid rgba(74,144,226,0.50);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#576975;
+	margin-top:10px; 
+  background-color: #4a90e2;
+}
+
+.s-box:hover{
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
+	transition: all ease 0.3s;
+}
+.s-btn:hover{
+	background-color:#4a90e2;
+	border: 1px solid #4a90e2;
+	color:#FFFFFF;
+	transition: all ease 0.3s;
+}
+.s-box:hover .bar{  
+	display: block;
+}
+@keyframes bar{
+	0%{
+		width:0px;
+	}
+	100%{
+		width:100px;
+	}
+}
+@media(max-width:1050px){
+	.s-box-container{
+		flex-wrap: wrap;
+		
+	}	
+	.services{
+		height: auto;
+	}
+	.s-heading{
+		margin: 15px;
+	}
+	.s-box{
+		flex-grow: 1;
+	}
+	
+}
+  </style>
+
+
+
+
+
+<section class="photo-grid-container"></section>
+<section class="hero"  id="achievements" style="background-color: white; color:black;">
+<center><h1>Achievements</h1></center><br><br><br><br><br><br><br><br>
+<center><div class="gallery">
+    <span style="--i:1"><img src="Images/MDRT2023.jpg"></span>
+    <span style="--i:2"><img src="Images/WhatsApp Image 2023-02-17 at 23.03.47.jpg"></span>
+    <span style="--i:3"><img src="Images/mom_mdrt2.jpeg"></span>
+    <span style="--i:4"><img src="Images/mom_img_11.jpeg"></span>
+    <span style="--i:5"><img src="Images/mom_img6.jpeg"></span>
+    <span style="--i:6"><img src="Images/awards.jpg"></span>
+    <span style="--i:7"><img src="Images/awards2.jpg"></span>
+    <span style="--i:8"><img src="Images/certificate2.jpg"></span>
+    <span style="--i:9"><img src="Images/certificate3.jpg"></span>
+    <span style="--i:10"><img src="Images/MDRT_2022.jpg"></span>
+</div></center><br><br><br><br><br>
+</section>
+
+    <style>
+
+      .circle{
+        width: 100%;
+        margin-top: -130px;
+      }
+      
+      .gallery {
+        position: relative;
+        width: 200px;
+        height: 300px;
+        transform-style: preserve-3d;
+        animation: animate 20s linear infinite; 
+
+      
+      }
+      
+      .gallery:hover{
+        animation-play-state: paused;
+      }
+      
+      
+      @keyframes animate {
+        0%{
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        100%{
+            transform: perspective(1000px) rotateY(180deg);
+        }
+      }
+      
+      .gallery span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i) * 36deg)) translateZ(450px);
+        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(4, 4, 4, 0.267));
+      }
+      
+      
+      
+      .gallery span img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: 0.5s;
+          border-radius: 15px;
+          border: 4px double rgb(0, 0, 0);
+      }
+      
+      .gallery img:hover{
+          transform: translateY(-2px);
+          
+      }
+    </style>
+
+
+
+    </div>
+
+
+
+
+    <style>
+.photo-grid-container {
+  column-count: 5;
+  column-width: 500px;
+}
+    </style>
+
+<!-- testimonial page -->
+
+
+<style>
+  :root {
+     --first_color: #15241c;
+     --second-color: #09382f;
+     --third-color: #FF882E;
+     --fourth-color:#E55E2E;
+     --fifth-color:#F8F1E0;
+     --sixth-color : #EC9937;
+ }
+
+ .Testimonials {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     max-width: 100%;
+     margin: 40px 0px;
+     
+ }
+
+ .Testimonials_title h2 {
+     font-size: 42px;
+     letter-spacing: -2px;
+     font-weight: 700;
+     letter-spacing: 0;
+     margin-bottom: 30px;
+     text-align: center;
+     color: var(--first_color);
+ }
+
+ .Testimonials_title>p {
+     max-width: 900px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 10px;
+     margin-bottom: 40px;
+     font-weight: 300;
+     text-align: center;
+ }
+
+
+ .testimonials_container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+ }
+
+
+ .testimonials_container_center {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .testimonials_content {
+     position: relative;
+     transition: all .3s ease-in-out;
+     transform: scale(0.9);
+     opacity: 0.9;
+ }
+
+ .testimonials_avatar {
+     position: absolute;
+     left: 50%;
+     top: -30px;
+     width: 90px;
+     height: 90px;
+     margin-left: -45px;
+     z-index: 1;
+ }
+
+ .testimonials_avatar img {
+     width: 90px;
+     height: 90px;
+     border-radius: 100%;
+     border: 6px solid #fff;
+ }
+
+ .testimonials_text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 75px 50px 75px;
+     overflow: hidden;
+     background: var(--third-color);
+     border: 1ps solid #f1f1f1;
+     border-radius: 10px;
+     transition: all .3s ease-in-out;
+ }
+
+ .testimonials_text_after {
+     font-style: normal;
+     font-weight: normal;
+     text-decoration: inherit;
+     position: absolute;
+     color: var(--fifth-color);
+     opacity: .3;
+     font-size: 35px;
+     transition: all 400ms linear;
+     bottom: 25px;
+     right: 30px;
+ }
+
+ .testimonials_text_before {
+     font-style: normal;
+     font-weight: normal;
+     text-decoration: inherit;
+     position: absolute;
+     color: var(--fifth-color);
+     opacity: .3;
+     font-size: 35px;
+     transition: all 400ms linear;
+     top: 25px;
+     left: 30px;
+ }
+
+
+ .testimonials_text p {
+     color: var(--second-color);
+     font-size: 14px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-style: italic;
+     line-height: 24px;
+     padding-bottom: 10px;
+     font-weight: 500;
+ }
+
+ .testimonials_information h3 {
+     font-weight: 600;
+     color: var(--second-color);
+     ;
+     font-size: 18px;
+ }
+
+ .testimonials_information h4 {
+     font-weight: 400;
+     font-size: 12px;
+     padding-top: 6px;
+     color: var(--second-color);
+     ;
+ }
+
+ .testimonials_container_center .active {
+     opacity: 1;
+     transform: scale(1.0);
+     width: 100%;
+     flex-grow: 6;
+ }
+
+ .testimonials_container_center .active .testimonials_text {
+     background: var(--fourth-color);
+ }
+
+ .listing-carousel-button {
+     position: relative;
+     width: 80px;
+     height: 50px;
+     z-index: 1;
+     cursor: pointer;
+     background: var(--second-color);
+     transition: all 200ms linear;
+     outline: none;
+ }
+
+ .listing-carousel-button.listing-carousel-button-next {
+     padding-right: 20px;
+     border-radius: 60px 0 0 60px;
+ }
+
+ .listing-carousel-button.listing-carousel-button-prev {
+     padding-left: 20px;
+     border-radius: 0 60px 60px 0;
+ }
+
+ .listing-carousel-button.listing-carousel-button-next:hover {
+     right: -15px;
+     background: rgba(6, 27, 65, 0.4);
+ }
+
+ .listing-carousel-button.listing-carousel-button-prev:hover {
+     left: -15px;
+     background: rgba(6, 27, 65, 0.4);
+ }
+ .test{
+  background: #AAD7D9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+ }
+</style>
+
+<div class="test" style="background-color: black;">
+  <br><br><br><br>
+  <center><h1 style="color: white;">Testimonials</h1></center>
+<section class="testimonials-container" id="testimonial">
+  <!-- Testimony 1 -->
+  <div class="testimony-container" style="background-color: #3D3B40;">
+    <div class="person-info">
+      <img class="person-image" src="images/image-daniel.jpg" alt="">
+      <div>
+        <span class="person-name">Nipa Jogani</span>
+      </div>
+    </div>
+    <p style="font-size: larger;">I am always satisfied with Hetal Shah's services. Very knowledgeable about her subject and so always suggest best policies acc. to requirements of clients. Her helping attitude and building good relationship with clients as well as providing best services like reminders and collection of premium amt. on time, etc.</p>
+  
+  </div>
+  <!-- Testimony 2 -->
+  <div class="testimony-container" style="background-color: #219C90;">
+    <div class="person-info">
+      <img class="person-image" src="images/image-jonathan.jpg" alt="">
+      <div>
+        <span class="person-name">Pinkal M Shah</span>
+      </div>
+    </div>
+    <p style="font-size: larger;">Mrs. Hetal shah is dedicated to her work and provides the best services to her coustomers.</p>
+  </div>
+  <!-- Testimony 3 -->
+  <div class="testimony-container" style="background-color: #508D4E; color: white;">
+    <div class="person-info">
+      <img class="person-image" src="images/image-jeanette.jpg" alt="">
+      <div>
+        <span class="person-name">Payal K Khandelwal</span>
+      </div>
+    </div>
+    <p style="font-size: larger;">I know Hetal since 5 years now. I have availed her service as an insurance advisor as well. Well versed with all the policies and very prompt in guiding for decision making. I recommend her to my family and clients as well. Keep it up. Best wishes.</p>
+
+  </div>
+  <!-- Testimony 4 -->
+  <div class="testimony-container">
+    <div class="person-info">
+      <img class="person-image" src="images/image-patrick.jpg" alt="">
+      <div>
+        <span class="person-name">Bhavesh Sheth</span>
+      </div>
+    </div>
+    <p style="font-size: larger;">For years, Hetal Shah has served as my reliable insurance advisor, consistently providing tailored solutions to safeguard the security of myself and my family. Her extensive expertise and unwavering dedication play a pivotal role in ensuring that we have the appropriate coverage and protection for our needs. With Hetal's guidance, we feel confident and reassured, knowing that our financial well-being is in capable hands.</p>
+  </div>
+  <!-- Testimony 5 -->
+  <div class="testimony-container" style="background-color: #36BA98; color: white;">
+    <div class="person-info">
+      <img class="person-image" src="images/image-kira.jpg" alt="">
+      <div>
+        <span class="person-name">Ketav V Shah</span>
+      </div>
+    </div>
+    <p style="font-size: larger;">Mrs. Hetal Shah is my financial and insurance adviser from the last 15 years. Her work is outstanding.She provided quick solutions with loan application, Claim settlements and any other finance related services in an accurate and timely manner.She responds to all my questions in a timely manner. No any other lic agent can provide instant service like her. I am quite happy with her service which I  received.</p>
+
+  </div>
+</section>
+</div>
+
+<style>
+  :root {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 1.875rem;
+    --fs-4xl: 2.25rem;
+    --fs-5xl: 3rem;
+    --fs-6xl: 3.75rem;
+    --fw-m: 500;
+    --fw-sb: 600;
+    --clr-primary-moderate-violate: hsl(200, 55%, 52%);
+    --clr-primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --clr-primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --clr-primary-white: hsl(0, 0%, 100%);
+    --clr-neutral-light-gray: hsl(0, 0%, 81%);
+    --clr-neutral-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    font-family: var(--ff-sans);
+    font-size: 13px;
+    font-weight: var(--fw-m);
+    line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.1;
+}
+
+
+.testimonials-container {
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+    padding-block: 5rem;
+    display: grid;
+    gap: 1.5rem;
+
+  }
+
+.testimonials-container>div:nth-child(1) {
+    --primary-color: 263, 55%, 52%;
+    --secondary-color: 0, 0%, 100%;
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right 20%;
+}
+
+.testimonials-container>div:nth-child(2) {
+    --primary-color: 217, 19%, 35%;
+    --secondary-color: 0, 0%, 100%;
+}
+
+.testimonials-container>div:nth-child(3) {
+    --secondary-color: 217, 19%, 35%;
+    --primary-color: 0, 0%, 100%;
+}
+
+.testimonials-container>div:nth-child(4) {
+    --primary-color: 219, 29%, 14%;
+    --secondary-color: 0, 0%, 100%;
+}
+
+.testimonials-container>div:nth-child(5) {
+    --secondary-color: 217, 19%, 35%;
+    --primary-color: 0, 0%, 100%;
+}
+
+.testimony-container {
+    border-radius: 10px;
+    padding: 1.5rem 2.3rem 2.3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: hsl(var(--primary-color));
+    color: hsl(var(--secondary-color));
+}
+
+.person-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.person-info>img {
+    border-radius: 50%;
+    width: 30px;
+    object-fit: contain;
+}
+
+.person-info>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-overview {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-sb);
+}
+
+.verified-graduate-text {
+    color: hsl(var(--secondary-color), .5);
+}
+
+.review-description {
+    color: hsl(var(--secondary-color), .7);
+    line-height: 1.4;
+}
+
+
+@media screen and (min-width: 48em) {
+    main {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+
+    .testimonials-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .testimonials-container>div:nth-child(1) {
+        grid-column: 1 / 3;
+    }
+
+    .testimonials-container>div:nth-child(2) {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .testimonials-container>div:nth-child(4) {
+        grid-column: 2 / 4;
+    }
+
+    .testimonials-container>div:nth-child(5) {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+}
+</style>
+
+
+  
+
+<section class="footer">
+  <div class="footer-row">
+    <div class="footer-col">
+      <h3 style="color: white;">YaTaxfinity</h3>
+      <ul class="links">
+        <p>YaTaxfinity, located in Surat, Gujarat, is a top-tier Financial Planning & Tax Consulting Company. With leaders boasting 20+ years of industry experience, we empower clients to safeguard investments through strategic consulting.</p>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>In This Website</h4>
+      <ul class="links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Testimonials</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Details</h4>
+      <ul class="links">
+        <li style="color: white;">G-mail - yataxfinity@gmail.com</li>
+        <li style="color: white;">Phone Number - +91 8849570928</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <style>
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 100px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    </style>
+    </head>
+    <body>
+    
+    <center>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-instagram"></a></center>
+</section>
+<style>
+  /* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.footer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: #10182F;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+</style>
+
+
+  
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
